@@ -1,0 +1,40 @@
+// vars
+$text: #adadad;
+$white: #fff;
+$red: #fc635e;
+$grey: #868686;
+$bg-grey: #f2f2f2;
+
+// layout
+@import "_misc/font";
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/setting";
+
+// components
+@import "../components/logo/logo";
+@import "../components/menu/menu";
+@import "../components/button/button";
+@import "../components/social/social";
+@import "../components/mobileMenu/mobileMenu";
+@import "../components/overlay/overlay";
+
+// style
+@import "../pages/layout/_layout";
+@import "../pages/layout/_header";
+@import "../pages/index";
+@import "../pages/section/mainScreen";
+@import "../pages/section/services";
+@import "../pages/section/expandBusiness";
+@import "../pages/section/ourProcess";
+@import "../pages/section/whatWeDo";
+@import "../pages/section/advertising";
+@import "../pages/section/marketing";
+@import "../pages/section/portfolio";
+@import "../pages/section/ourTeam";
+@import "../pages/section/quotes";
+@import "../pages/section/address";
+@import "../pages/layout/_footer";
+
+// media queris
+@import "../css/adaptive/adaptive"

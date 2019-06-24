@@ -1,0 +1,28 @@
+.b-marketing {
+	background-color: $bg-grey;
+	padding: 120px 0 80px;
+}
+
+.b-marketing__block {
+	@include flex();
+}
+
+.b-marketing__left {
+	width: 44%;
+	margin-right: 2%;
+	order: 1;
+}
+
+.b-marketing__text {
+	@include encore(light);
+	max-height: 110px;
+	font-size: rem(15px);
+	line-height: 22px;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.b-marketing__right {
+	width: 54%;
+	order: 2;
+}

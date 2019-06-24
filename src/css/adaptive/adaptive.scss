@@ -1,0 +1,683 @@
+/*===================================================
+	Медиа запросы
+=====================================================*/
+
+@include laptop {
+	.b-container {
+		max-width: 768px;
+		padding: 0 10px;
+	}
+
+	/* Главный экран */
+	.b-mainScreen__title {
+		&:before, &:after {
+			display: none;
+		}
+	}
+
+	.b-mainScreen__mouse {
+		left: 65%;
+	}
+
+	/* Наш процесс */
+	.b-ourProcess__steps-item {
+		&.one {
+			margin-top: 95px;
+			margin-right: 88px;
+		}
+
+		&.three {
+			margin-top: 8px;
+    		margin-left: -84px;
+		}
+
+		&.img {
+			top: 44.5%;
+    		left: 4%;
+		}
+	}
+
+	/* Что делаем */
+	.b-whatWeDo__img {
+		&.desctop {
+			width: 85%;
+		}
+
+		&.laptop {
+			width: 57%;
+			top: 48%;
+		}
+
+		&.tablet {
+			width: 25%;
+			top: 45%;
+		}
+	}
+
+	/* Портфолио */
+	.b-portfolio__content-item {
+		height: 160px;
+
+		img {
+			width: auto;
+			object-fit: cover;
+		}
+	}
+	
+	.b-portfolio__content-item-appBlock {
+		padding: 15px;
+	}
+
+	.b-portfolio__content-item-appBlock-title {
+		font-size: rem(24px);
+		line-height: 22px;
+	}
+
+	.b-portfolio__content-item-appBlock-plus {
+		width: 36px;
+		height: 34px;
+	}
+
+	/* Наша команда */
+	.b-ourTeam__list {
+		padding: 0;
+	}
+}
+
+@include tablets {
+	html {
+		font-size: 14px;
+	}
+
+	.b-container {
+		max-width: 450px;
+	}
+
+	.b-button {
+		min-width: 150px;
+		font-size: rem(20px);
+		padding: 14px 10px;
+	}
+
+	.b-button-red {
+		font-size: rem(18px);
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.b-title {
+		font-size: rem(26px);
+	}
+
+	.b-title-article {
+		font-size: rem(26px);
+		line-height: 24px;
+		padding-left: 18px;
+		padding-top: 5px;
+
+		&:before {
+			width: 7px;
+			height: 30px;
+		}
+	}
+
+	/* шапка */
+
+	.l-header {
+		padding: 10px 0;
+	}
+
+	.b-logo__img {
+		width: 39px;
+		height: 48px;
+		margin-right: 10px;
+	}
+
+	.b-burger {
+		@include inlineBlock();
+	}
+
+	.b-menu__list {
+		display: none;
+	}
+
+	/* Главный экран */
+
+	.b-mainScreen {
+		height: 500px;
+		padding-top: 150px;
+	}
+
+	.b-mainScreen__title {
+		font-size: rem(40px);
+	}
+
+	.b-mainScreen__text {
+		font-size: rem(20px);
+		line-height: 22px;
+		margin-bottom: 40px;
+	}
+
+	.b-mainScreen__mouse {
+		display: none;
+	}
+
+	.b-mainScreen__nextScreen {
+		width: 24px;
+		height: 24px;
+	}
+
+	/* Услуги */
+
+	.b-services {
+		padding: 40px 0;
+	}
+
+	.b-services__text {
+		margin-bottom: 50px;
+	}
+
+	.b-services__item {
+	    width: 45%;
+	    margin-left: 5%;
+	    margin-bottom: 30px;
+	}
+
+	.b-services__item-icon {
+		margin-bottom: 15px;
+	}
+
+	/* Блок расширь бизнесс */
+
+	.b-expandBusiness {
+		height: auto;
+		padding: 50px 0;
+	}
+
+	.b-expandBusiness__block {
+	    padding-top: 50px;
+	    padding-bottom: 50px;
+	}
+
+	.b-expandBusiness__block-title {
+		font-size: rem(40px);
+		margin-bottom: 40px;
+	}
+
+	/* Наш процесс */
+
+	.b-ourProcess {
+		padding-bottom: 50px;
+	}
+
+	.b-ourProcess__text {
+		margin-bottom: 50px;
+	}
+
+	.b-ourProcess__steps {
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.b-ourProcess__steps-item {
+		position: relative;
+		width: 50%;
+		height: auto;
+		background-image: none;
+		padding-top: 0;
+		margin-top: 0;
+
+		&.one, &.two, &.three, &.four {
+			margin: 0;
+			background-image: none;
+		}
+
+		&.one {
+			margin-bottom: 40px;
+
+			&:after {
+				display: none;
+			}
+		}
+
+		&.two {
+			margin-bottom: 40px;
+		}
+
+		&.four {
+			width: 50%;
+			height: auto;
+
+			.b-ourProcess__steps-icon {
+				top: 0;
+
+				&.last {
+					display: none;
+				}
+			}
+
+			.b-ourProcess__steps-text {
+				max-width: 100%;
+			}
+		}
+
+		&.img {
+			display: none;
+		}
+	}
+
+	.b-ourProcess__steps-icon {
+		width: 28px;
+		height: 28px;
+		top: 0;
+		left: 5%;
+	}
+
+	.b-ourProcess__steps-text {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		font-size: rem(16px);
+		text-align: center;
+		padding: 0 5%;
+	}
+
+	/* Что делаем, Блок реклама, Блок маркетинг */
+
+	.b-whatWeDo,
+	.b-advertising,
+	.b-marketing {
+		padding: 50px 0;
+	}
+
+	.b-whatWeDo__title {
+		margin-bottom: 45px;
+	}
+
+	.b-whatWeDo__block,
+	.b-advertising__block,
+	.b-marketing__block {
+		display: block;
+		padding-top: 0;
+	}
+
+	.b-whatWeDo__left,
+	.b-marketing__left {
+		width: 100%;
+	}
+
+	.b-whatWeDo__right,
+	.b-marketing__right {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.b-whatWeDo__img {
+		&.laptop {
+			top: 55%;
+		}
+
+		&.tablet {
+			top: 52%;
+		}
+	}
+
+	.b-whatWeDo__block-text,
+	.b-advertising__text,
+	.b-marketing__text {
+		margin-bottom: 20px;
+	}
+
+	.b-advertising__left {
+		width: 60%;
+		margin: 0 auto 30px;
+	}
+
+	.b-advertising__right {
+		width: 100%;
+	}
+
+	/* Блок портфолио */
+
+	.b-portfolio {
+		padding: 50px 0;
+	}
+
+	.b-portfolio__title {
+		margin-bottom: 20px;
+	}
+
+	.b-portfolio__tabs {
+		display: none;
+	}
+
+	.b-portfolio__content {
+		margin-bottom: 40px;
+	}
+
+	.b-portfolio__content-item {
+		height: 180px;
+
+		&:nth-child(1),
+		&:nth-child(6) {
+			width: 100%;
+		}
+
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4),
+		&:nth-child(5) {
+			width: 49%;
+		}
+	}
+
+	.b-portfolio__content-item-appBlock-title {
+		font-size: rem(20px);
+		line-height: 18px;
+	}
+
+	.b-portfolio__content-item-appBlock-plus {
+		width: 30px;
+		height: 28px;
+	}
+
+	/* Блок наша команда */
+
+	.b-ourTeam {
+		padding: 50px 0;
+	}
+
+	.b-ourTeam__title {
+		margin-bottom: 40px;
+	}
+
+	.b-ourTeam__item-img {
+		margin-bottom: 10px;
+
+		img {
+			width: 80%;
+		}
+	}
+
+	.b-ourTeam__item-name {
+		min-height: 42px;
+		font-size: rem(22px);
+		line-height: 20px;
+		margin-bottom: 5px;
+	}
+
+	.b-ourTeam__item-occupation {
+		font-size: rem(18px);
+	}
+
+	/* Блок цитат */
+
+	.b-quotes {
+		padding-bottom: 100px;
+	}
+
+	.b-quotes__img {
+		margin-bottom: 40px;
+	}
+
+	.b-slider__content {
+		margin-bottom: 30px;
+	}
+
+	.b-slider__item-left {
+		width: 100%;
+		padding-top: 0;
+		order: 3;
+	}
+
+	.b-slider__item-center {
+		width: 47%;
+		text-align: right;
+		margin-right: 6%;
+		margin-bottom: 30px;
+		order: 1;
+
+		img {
+			width: 100px;
+		}
+	}
+
+	.b-slider__item-right {
+		width: 47%;
+		padding-top: 32px;
+		order: 2;
+	}
+
+	.b-slider__item-name {
+		line-height: 20px;
+	}
+
+	/* Блок с картой */
+
+	.b-address__item {
+	    width: 145px;
+    	height: 168px;
+	    top: -84px;
+	    padding-top: 43px;
+	}
+
+	.b-address__item-title {
+		margin-bottom: 10px;
+	}
+
+	.b-address__item-text {
+		line-height: 18px;
+	}
+
+	.b-map {
+		height: 240px;
+	}
+
+	/* подвал */
+
+	.b-footer {
+		padding: 30px 0;
+
+		.b-logo__img {
+			width: 58px;
+			height: 70px;
+		}
+
+		.b-logo__text {
+			font-size: rem(26px);
+		}
+	}
+}
+
+@include phone {
+
+	.b-container {
+		max-width: 100%;
+	}
+
+	.b-title {
+		font-size: rem(22px);
+	}
+
+	.b-title-article {
+		font-size: rem(22px);
+		line-height: 20px;
+	}
+
+	/* Главный экран */
+
+	.b-mainScreen__title {
+		font-size: rem(36px);
+	}
+
+	.b-mainScreen__text {
+		max-width: 80%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	/* Услуги */
+
+	.b-services__text {
+		margin-bottom: 30px;
+	}
+
+	.b-services__item {
+		&:nth-child(3),
+		&:nth-child(4) {
+			margin-bottom: 0;
+		}
+	}
+
+	.b-services__item-icon {
+		width: 70px;
+		height: 85px;
+		margin-bottom: 10px;
+	}
+
+	.b-services__item-title {
+	    line-height: 16px;
+	    padding-bottom: 5px;
+	    margin-bottom: 10px;
+	}
+
+	/* Блок расширь бизнесс */
+
+	.b-expandBusiness {
+		padding: 40px 0;
+	}
+
+	.b-expandBusiness__block {
+	    padding-top: 40px;
+	    padding-bottom: 40px;
+	}
+
+	.b-expandBusiness__block-title {
+		font-size: rem(36px);
+		margin-bottom: 20px;
+	}
+
+	/* Наш процесс */
+
+	.b-ourProcess {
+		padding: 40px 0;
+	}
+
+	.b-ourProcess__text {
+		margin-bottom: 30px;
+	}
+
+	.b-ourProcess__steps-title {
+		font-size: rem(20px);
+		line-height: 20px;
+	}
+
+	/* Что делаем, Блок реклама, Блок маркетинг */
+
+	.b-whatWeDo,
+	.b-advertising,
+	.b-marketing {
+		padding: 40px 0;
+	}
+
+	.b-whatWeDo__title {
+		margin-bottom: 30px;
+	}
+
+	.b-whatWeDo__right,
+	.b-marketing__right {
+		width: 50%;
+	}
+
+	.b-advertising__left {
+		width: 50%;
+		margin: 0 auto 20px;
+	}
+
+	/* Блок портфолио */
+
+	.b-portfolio {
+		padding: 40px 0;
+	}
+
+	.b-portfolio__content {
+		margin-bottom: 20px;
+	}
+
+	/* Блок наша команда */
+
+	.b-ourTeam {
+		padding: 40px 0;
+	}
+
+
+	.b-ourTeam__item-name {
+		min-height: 37px;
+		font-size: rem(20px);
+		line-height: 18px;
+	}
+
+	/* Блок цитат */
+
+	.b-quotes {
+		padding-top: 40px;
+		padding-bottom: 90px;
+	}
+
+	.b-slider__item-center {
+		margin-bottom: 20px;
+
+		img {
+			width: 90px;
+		}
+	}
+
+	.b-slider__item-right {
+		padding-top: 26px;
+	}
+
+	.b-slider__item-name {
+		font-size: rem(22px);
+		line-height: 22px;
+	}
+
+	.b-slider__item-occupation {
+		font-size: rem(18px);
+	}
+
+	/* Блок с картой */
+
+	.b-address__item {
+	    width: 120px;
+    	height: 140px;
+	    top: -70px;
+	    padding-top: 30px;
+	}
+
+	.b-map {
+		height: 200px;
+	}
+
+	/* подвал */
+
+	.b-footer {
+		padding: 20px 0;
+
+		.b-logo__img {
+			width: 48px;
+			height: 60px;
+		}
+
+		.b-logo__text {
+			font-size: rem(22px);
+		}
+	}
+}
+
+@media screen and(max-width: 375px) {
+	/* Блок портфолио */
+	
+	.b-portfolio__content-item {
+	    height: 150px;
+	}
+}

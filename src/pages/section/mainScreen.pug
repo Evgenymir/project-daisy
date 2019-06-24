@@ -1,0 +1,11 @@
+.b-mainScreen
+	.b-container
+		h1.b-mainScreen__title
+			span Clients 
+			| in your business
+		p.b-mainScreen__text Your clients on the internet. Learn how to receive them.
+		.b-mainScreen__button-wrap
+			+button('#', 'I want clients')(class="b-mainScreen__button")
+			svg.b-mainScreen__mouse(width="47px" height="32px")
+				use(xlink:href="#icon-mouse")
+		a.b-mainScreen__nextScreen.j-nextScreen(href="#b-services")

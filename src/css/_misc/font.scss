@@ -1,0 +1,90 @@
+// font
+@font-face {
+    font-family: 'pf_encore_sans_proitalic';
+    src: url('../fonts/pfencoresanspro-italic.woff2') format('woff2'),
+         url('../fonts/pfencoresanspro-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pf_encore_sans_proregular';
+    src: url('../fonts/pfencoresanspro-regular.woff2') format('woff2'),
+         url('../fonts/pfencoresanspro-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pf_encore_sans_probold';
+    src: url('../fonts/pfencoresanspro-bold.woff2') format('woff2'),
+         url('../fonts/pfencoresanspro-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pf_encore_sans_probold_italic';
+    src: url('../fonts/pfencoresanspro-bolditalic.woff2') format('woff2'),
+         url('../fonts/pfencoresanspro-bolditalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pf_encore_sans_prolight';
+    src: url('../fonts/pfencoresanspro-light.woff2') format('woff2'),
+         url('../fonts/pfencoresanspro-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pf_encore_sans_promedium';
+    src: url('../fonts/pfencoresanspro-medium.woff2') format('woff2'),
+         url('../fonts/pfencoresanspro-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'Conv_GothaProBol';
+	src: url('../fonts/GothaProBol.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// font_mixin
+
+@mixin encore($style: regular) {
+
+    @if $style == light {
+        font-family: 'pf_encore_sans_prolight', sans-serif;
+    }
+
+	@if $style == regular {
+		font-family: 'pf_encore_sans_proregular', sans-serif;
+	}
+
+    @if $style == medium {
+        font-family: 'pf_encore_sans_promedium', sans-serif;
+    }
+
+	@if $style == bold {
+		font-family: 'pf_encore_sans_probold', sans-serif;
+	}
+}
+
+@mixin gotham($style: bold) {
+
+	@if $style == bold {
+		font-family: 'Conv_GothaProBol', sans-serif;
+	}
+}

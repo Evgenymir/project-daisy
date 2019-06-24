@@ -1,0 +1,49 @@
+//- Подключаем конфиг с переменными
+block config
+	include _config.pug
+
+//- Инклюдим компоненты которые с миксинами
+include ../../components/button/button
+include ../../components/social/social
+
+
+doctype html
+html(lang="en")
+	head
+		include _head.pug
+		block title 
+			title #{headTitle}
+
+		//css
+		block cssLinks
+			link(rel="stylesheet" href=cssPath+"/slick.css")
+			link(rel="stylesheet" href=cssPath+"/main.css")
+
+	body
+		
+		// Шапка
+		
+		header.l-header.j-header
+			include _header.pug
+
+		// Контент
+		main.l-content
+			block content
+
+		// Подвал
+		footer.l-footer.b-footer
+			include _footer.pug
+		
+		// Мобильное меню
+		include ../../components/mobileMenu/mobileMenu
+
+		// Темная подложка
+		include ../../components/overlay/overlay
+
+		// Спрайт svg
+		include _sprite.html
+					
+		// script
+		block scripts
+			script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+			script(src="js/app.js")

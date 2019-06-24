@@ -1,0 +1,13 @@
+.b-header {
+	@include flex();
+	align-items: center;
+}
+
+.b-header__left {
+	width: 50%;
+}
+
+.b-header__right {
+	width: 50%;
+	text-align: right;
+}

@@ -1,0 +1,42 @@
+.b-address {
+	background-color: $white;
+}
+
+.b-address__wrap {
+	position: relative;
+}
+
+.b-address__item {
+	@include bg(contain);
+	width: 209px;
+	height: 242px;
+	text-align: center;
+	color: $white;
+	background-image: url("../img/sprite/icon-ellipsis.svg");
+	position: absolute;
+	top: -121px;
+	left: 0; right: 0;
+	z-index: 1;
+	margin: auto;
+	padding-top: 76px;
+}
+
+.b-address__item-title {
+	@include encore(medium);
+	font-size: rem(27px);
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.b-address__item-text {
+	@include encore(light);
+	font-size: rem(15px);
+	line-height: 20px;
+	font-style: normal;
+}
+
+.b-map {
+	width: 100%;
+	height: 340px;
+	background-color: $grey;
+}

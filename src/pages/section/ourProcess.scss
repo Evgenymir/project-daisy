@@ -1,0 +1,129 @@
+.b-ourProcess {
+	background-color: $white;
+	text-align: center;
+	padding: 50px 0 85px;
+}
+
+.b-ourProcess__text {
+	@include encore(light);
+	width: 100%;
+	max-width: 505px;
+	font-size: rem(18px);
+	line-height: 26px;
+	margin: 0 auto;
+	margin-bottom: 57px;
+}
+
+.b-ourProcess__steps {
+	@include flex();
+	flex-wrap: nowrap;
+	max-width: 790px;
+	position: relative;
+	height: 550px;
+	margin: 0 auto;
+}
+
+.b-ourProcess__steps-item {
+	width: 174px;
+	height: 200px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	padding-top: 45px;
+	text-align: center;
+
+	&.one {
+		background-image: url("../img/step-1.png");
+		margin-top: 97px;
+		margin-right: 90px;
+
+		&:after {
+			content: "";
+			width: 64%;
+			height: 4px;
+			background-color: $red;
+			position: absolute;
+			bottom: 23px;
+    		left: 94%;
+			transform: rotate(30deg);
+		}
+	}
+
+	&.two {
+		background-image: url("../img/step-2.png");
+		margin-top: 150px;
+	}
+
+	&.three {
+		background-image: url("../img/step-3.png");
+    	margin-top: 1px;
+		margin-left: -88px;
+	}
+
+	&.four {
+		width: 262px;
+		height: 302px;
+		background-image: url("../img/step-4.png");
+		margin-top: 75px;
+
+		.b-ourProcess__steps-icon {
+			top: 55px;
+
+			&.last {
+				top: auto;
+		    	bottom: -16px;
+		    	left: 0;
+		    	right: 0;
+		    	margin: auto;
+			}
+		}
+
+		.b-ourProcess__steps-text {
+			max-width: 195px;
+		}
+	}
+
+	&.img {
+		position: absolute;
+	    top: 45%;
+	    left: 5.3%;
+	    width: 262px;
+	    height: 302px;
+	    padding-top: 0;
+	}
+}
+
+.b-ourProcess__steps-icon {
+	position: absolute;
+	top: 30px;
+    left: -16px;
+}
+
+.b-ourProcess__steps-title {
+	@include inlineBlock();
+	@include encore(medium);
+	font-size: rem(24px);
+	color: $grey;
+	line-height: 26px;
+	text-transform: uppercase;
+	border-bottom: 1px solid $grey;
+	padding-bottom: 3px;
+	margin: 0;
+	margin-bottom: 17px;
+
+	span {
+		color: $red;
+	}
+}
+
+.b-ourProcess__steps-text {
+	@include inlineBlock();
+	@include encore(light);
+	max-width: 127px;
+	height: 50px;
+	font-size: rem(14px);
+	line-height: 16px;
+	text-align: left;
+	overflow: hidden;
+}

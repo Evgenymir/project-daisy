@@ -1,0 +1,37 @@
+.b-advertising {
+	background-color: $white;
+	padding: 130px 0;
+}
+
+.b-advertising__block {
+	@include flex();
+}
+
+.b-advertising__left {
+	width: 54%;
+	margin-right: 2%;
+}
+
+.b-advertising__right {
+	width: 44%;
+	text-align: right;
+}
+
+.b-advertising-title {
+	padding-right: 22px;
+	padding-left: 0;
+
+	&:before {
+		left: auto;
+		right: 0;
+	}
+}
+
+.b-advertising__text {
+	@include encore(light);
+	max-height: 110px;
+	font-size: rem(15px);
+	line-height: 22px;
+	overflow: hidden;
+	margin-bottom: 40px;
+}

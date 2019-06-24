@@ -1,0 +1,43 @@
+//- Наследуем шаблон
+extends layout/_layout.pug
+
+//- Блок переменных
+append config
+	- var currentURL = 'index.html';
+
+//- Блок контента страницы
+
+block content
+
+	// Главный экран
+	include section/mainScreen
+
+	// Услуги
+	include section/services
+
+	// Блок расширь бизнесс
+	include section/expandBusiness
+
+	// Наш процесс
+	include section/ourProcess
+
+	// Что делаем
+	include section/whatWeDo
+
+	// Блок реклама
+	include section/advertising
+
+	// Блок маркетинг
+	include section/marketing
+
+	// Блок портфолио
+	include section/portfolio
+
+	// Блок наша команда
+	include section/ourTeam
+
+	// Блок цитат
+	include section/quotes
+
+	// Блок с картой
+	include section/address

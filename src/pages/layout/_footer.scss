@@ -1,0 +1,15 @@
+.b-footer {
+	@include bg();
+	background-image: url("../img/bg/footer.jpg");
+	text-align: center;
+	padding: 70px 0;
+
+	.b-logo__img {
+		width: 78px;
+		height: 90px;
+	}
+
+	.b-logo__text {
+		font-size: rem(32px);
+	}
+}

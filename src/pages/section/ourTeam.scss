@@ -1,0 +1,46 @@
+.b-ourTeam {
+	background-color: $bg-grey;
+	padding: 55px 0 110px;
+	text-align: center;
+}
+
+.b-ourTeam__title {
+	margin-bottom: 70px;
+}
+
+.b-ourTeam__list {
+	@include flex();
+	padding: 0 2%;
+}
+
+.b-ourTeam__item {
+	width: 32%;
+	margin-right: 2%;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.b-ourTeam__item-img {
+	margin-bottom: 25px;
+}
+
+.b-ourTeam__item-name {
+	@include encore(medium);
+	font-size: rem(28px);
+	color: $grey;
+	line-height: 26px;
+	margin-bottom: 10px;
+
+	span {
+		color: $red;
+	}
+}
+
+.b-ourTeam__item-occupation {
+	@include encore(light);
+	font-size: rem(20px);
+	color: $grey;
+	margin-bottom: 14px;
+}

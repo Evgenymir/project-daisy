@@ -1,0 +1,67 @@
+.b-whatWeDo {
+	text-align: center;
+	background-color: $bg-grey;
+	padding: 60px 0 90px;
+}
+
+.b-whatWeDo__block {
+	@include flex();
+	text-align: left;
+	padding-top: 65px;
+}
+
+.b-whatWeDo__left {
+	width: 48%;
+	margin-right: 3%;
+	padding-top: 30px;
+	order: 1;
+}
+
+.b-whatWeDo__block-text {
+	@include encore(light);
+	max-height: 110px;
+	font-size: rem(15px);
+	line-height: 22px;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.b-whatWeDo__right {
+	width: 49%;
+	position: relative;
+	text-align: center;
+	order: 2;
+
+	&:hover {
+		.b-whatWeDo__img {
+
+			&.laptop {
+				left: 0px;
+			}
+
+			&.tablet {
+				right: 20px;
+			}
+		}
+	}
+}
+
+.b-whatWeDo__img {
+	@include inlineBlock();
+	position: absolute;
+	transition: left, right, ease 0.3s;
+
+	&.desctop {
+		position: static;
+	}
+
+	&.laptop {
+		top: 51%;
+		left: -25px;
+	}
+
+	&.tablet {
+		top: 46%;
+		right: 0;
+	}
+}

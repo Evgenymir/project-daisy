@@ -1,0 +1,62 @@
+.l-header {
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	left: 0; right: 0;
+	z-index: 9;
+	padding: 20px 0;
+
+	&.scroll {
+		position: fixed;
+		top: -100%;
+		background-color: $white;
+		padding: 10px 0;
+		box-shadow: 0 0 5px 0 rgba(0,0,0, 0.2);
+
+		.b-logo__img {
+			width: 32px;
+			height: 38px;
+		}
+
+		.b-logo__text {
+			font-size: rem(18px);
+			color: $grey;
+		}
+
+		.b-menu__link {
+			font-size: rem(14px);
+			color: $grey;
+
+			&:hover {
+				color: $red;
+			}
+
+			&.active {
+				color: $red;
+			}
+		}
+
+		.b-burger__line {
+			background-color: $grey;
+		}
+	}
+
+	&.scroll-animation-show {
+		animation-name: headerShow;
+		animation-duration: 0.5s;
+		animation-timing-function: ease;
+		animation-fill-mode: both;
+	}
+}
+
+// Анимация для плавного показа шапки при прокрутке
+
+@keyframes headerShow {
+	0% {
+		top: -100%;
+	}
+
+	100% {
+		top: 0;
+	}
+}
