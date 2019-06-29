@@ -1,20 +1,47 @@
 .b-advertising {
 	background-color: $white;
 	padding: 130px 0;
+
+	@include tablets {
+		padding: 50px 0;
+	}
+
+	@include phone {
+		padding: 40px 0;
+	}
 }
 
 .b-advertising__block {
 	@include flex();
+
+	@include tablets {
+		display: block;
+		padding-top: 0;
+	}
 }
 
 .b-advertising__left {
 	width: 54%;
 	margin-right: 2%;
+
+	@include tablets {
+		width: 60%;
+		margin: 0 auto 30px;
+	}
+
+	@include phone {
+		width: 50%;
+		margin: 0 auto 20px;
+	}
 }
 
 .b-advertising__right {
 	width: 44%;
 	text-align: right;
+
+	@include tablets {
+		width: 100%;
+	}
 }
 
 .b-advertising-title {
@@ -34,4 +61,8 @@
 	line-height: 22px;
 	overflow: hidden;
 	margin-bottom: 40px;
+
+	@include tablets {
+		margin-bottom: 20px;
+	}
 }

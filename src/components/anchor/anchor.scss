@@ -1,0 +1,24 @@
+.b-anchor {
+	display: block;
+	width: 28px;
+	height: 28px;
+	background-image: url("../img/icon/arrowDown.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	bottom: 28px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transition: background ease 0.3s;
+
+	&:hover {
+		background-image: url("../img/icon/arrowDownWhite.png");
+	}
+
+	@include tablets {
+		width: 24px;
+		height: 24px;
+	}
+}

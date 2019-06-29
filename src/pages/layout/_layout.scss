@@ -47,6 +47,10 @@
 		animation-timing-function: ease;
 		animation-fill-mode: both;
 	}
+
+	@include tablets {
+		padding: 10px 0;
+	}
 }
 
 // Анимация для плавного показа шапки при прокрутке

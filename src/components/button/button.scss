@@ -23,6 +23,12 @@
 			opacity: 1;
 		}
 	}
+
+	@include tablets {
+		min-width: 150px;
+		font-size: rem(20px);
+		padding: 14px 10px;
+	}
 }
 
 .b-button-red {
@@ -35,5 +41,11 @@
 	&:hover {
 		color: $red;
 		background-color: transparent;
+	}
+
+	@include tablets {
+		font-size: rem(18px);
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 }

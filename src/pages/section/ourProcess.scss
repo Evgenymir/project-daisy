@@ -2,6 +2,14 @@
 	background-color: $white;
 	text-align: center;
 	padding: 50px 0 85px;
+
+	@include tablets {
+		padding-bottom: 50px;
+	}
+
+	@include phone {
+		padding: 40px 0;
+	}
 }
 
 .b-ourProcess__text {
@@ -12,6 +20,14 @@
 	line-height: 26px;
 	margin: 0 auto;
 	margin-bottom: 57px;
+
+	@include tablets {
+		margin-bottom: 50px;
+	}
+
+	@include phone {
+		margin-bottom: 30px;
+	}
 }
 
 .b-ourProcess__steps {
@@ -21,6 +37,11 @@
 	position: relative;
 	height: 550px;
 	margin: 0 auto;
+
+	@include tablets {
+		flex-wrap: wrap;
+		height: auto;
+	}
 }
 
 .b-ourProcess__steps-item {
@@ -48,17 +69,48 @@
     		left: 94%;
 			transform: rotate(30deg);
 		}
+
+		@include laptop {
+			margin-top: 95px;
+			margin-right: 88px;
+		}
+
+		@include tablets {
+			background-image: none;
+			margin: 0;
+			margin-bottom: 40px;
+
+			&:after {
+				display: none;
+			}
+		}
 	}
 
 	&.two {
 		background-image: url("../img/step-2.png");
 		margin-top: 150px;
+
+		@include tablets {
+			background-image: none;
+			margin: 0;
+			margin-bottom: 40px;
+		}
 	}
 
 	&.three {
 		background-image: url("../img/step-3.png");
     	margin-top: 1px;
 		margin-left: -88px;
+
+		@include laptop {
+			margin-top: 8px;
+    		margin-left: -84px;
+		}
+
+		@include tablets {
+			margin: 0;
+			background-image: none;
+		}
 	}
 
 	&.four {
@@ -76,11 +128,30 @@
 		    	left: 0;
 		    	right: 0;
 		    	margin: auto;
+
+		    	@include tablets {
+					display: none;
+				}
+			}
+
+			@include tablets {
+				top: 0;
 			}
 		}
 
 		.b-ourProcess__steps-text {
 			max-width: 195px;
+
+			@include tablets {
+				max-width: 100%;
+			}
+		}
+
+		@include tablets {
+			width: 50%;
+			height: auto;
+			background-image: none;
+			margin: 0;
 		}
 	}
 
@@ -91,6 +162,24 @@
 	    width: 262px;
 	    height: 302px;
 	    padding-top: 0;
+
+	    @include laptop {
+			top: 44.5%;
+    		left: 4%;
+		}
+
+		@include tablets {
+			display: none;
+		}
+	}
+
+	@include tablets {
+		position: relative;
+		width: 50%;
+		height: auto;
+		background-image: none;
+		padding-top: 0;
+		margin-top: 0;
 	}
 }
 
@@ -98,6 +187,13 @@
 	position: absolute;
 	top: 30px;
     left: -16px;
+
+    @include tablets {
+		width: 28px;
+		height: 28px;
+		top: 0;
+		left: 5%;
+	}
 }
 
 .b-ourProcess__steps-title {
@@ -115,6 +211,11 @@
 	span {
 		color: $red;
 	}
+
+	@include phone {
+		font-size: rem(20px);
+		line-height: 20px;
+	}
 }
 
 .b-ourProcess__steps-text {
@@ -126,4 +227,13 @@
 	line-height: 16px;
 	text-align: left;
 	overflow: hidden;
+
+	@include tablets {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		font-size: rem(16px);
+		text-align: center;
+		padding: 0 5%;
+	}
 }

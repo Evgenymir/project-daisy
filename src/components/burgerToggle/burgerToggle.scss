@@ -1,15 +1,4 @@
- .b-menu {
- 	@include inlineBlock();
- 	max-width: 422px;
- 	width: 100%;
- 	text-align: right;
-
- 	@include tablets {
- 		display: none;
- 	}
- }
-
- .b-burger {
+.b-burgerToggle {
  	display: none;
  	position: relative;
  	width: 30px;
@@ -17,13 +6,13 @@
  	cursor: pointer;
 
  	&:hover {
- 		.b-burger__line {
+ 		.b-burgerToggle__line {
  			margin-bottom: 6px;
  		}
  	}
 
  	&.active {
- 		.b-burger__line {
+ 		.b-burgerToggle__line {
  			position: absolute;
  			top: 8px;
 
@@ -43,9 +32,13 @@
  			}
  		}
  	}
- }
 
- .b-burger__line {
+ 	@include tablets {
+ 		@include inlineBlock();
+ 	}
+}
+
+.b-burgerToggle__line {
  	width: 100%;
  	height: 4px;
  	background-color: $white;
@@ -65,33 +58,5 @@
 	&:nth-child(3) {
 		top: 100%;
 		margin-top: -4px;
-	}
- }
-
-.b-menu__list {
-	@include reset-list();
-	@include flex(space-between);
-}
-
-.b-menu__item {}
-
-.b-menu__link {
-	@include encore();
-	font-size: rem(16px);
-	color: $white;
-	line-height: 1;
-	text-transform: uppercase;
-	letter-spacing: 0.64px;
-	text-decoration: none;
-	border-bottom: 4px solid transparent;
-	transition: color ease 0.3s;
-
-	&:hover {
-		color: $red;
-	}
-
-	&.active {
-		color: $red;
-		border-color: $red;
 	}
 }

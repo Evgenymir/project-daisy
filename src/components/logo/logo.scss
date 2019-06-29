@@ -16,6 +16,12 @@
 	height: 68px;
 	margin-right: 13px;
 	transition: transform ease 0.3s;
+
+	@include tablets {
+		width: 39px;
+		height: 48px;
+		margin-right: 10px;
+	}
 }
 
 .b-logo__text {

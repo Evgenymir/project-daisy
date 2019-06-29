@@ -6,12 +6,31 @@
 	background-size: cover;
 	text-align: center;
 	padding: 90px 0;
+
+	@include tablets {
+		height: auto;
+		padding: 50px 0;
+	}
+
+	@include phone {
+		padding: 40px 0;
+	}
 }
 
 .b-expandBusiness__block {
 	border: 8px solid rgba(255, 255, 255, 0.1);
 	padding-top: 130px;
 	padding-bottom: 100px;
+
+	@include tablets {
+		padding-top: 50px;
+	    padding-bottom: 50px;
+	}
+
+	@include phone {
+		padding-top: 40px;
+	    padding-bottom: 40px;
+	}
 }
 
 .b-expandBusiness__block-title {
@@ -24,5 +43,15 @@
 
 	span {
 		color: $red;
+	}
+
+	@include tablets {
+		font-size: rem(40px);
+		margin-bottom: 40px;
+	}
+
+	@include phone {
+		font-size: rem(36px);
+		margin-bottom: 20px;
 	}
 }

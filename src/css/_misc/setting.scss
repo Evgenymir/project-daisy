@@ -7,6 +7,10 @@ $containerWidth: 980px;
 
 html {
 	font-size: 16px;
+
+	@include tablets {
+		font-size: 14px;
+	}
 }
 
 body, html {
@@ -73,6 +77,19 @@ img {
 	max-width: $containerWidth;
 	margin: 0 auto;
 	padding: 0 20px;
+
+	@include laptop {
+		max-width: 768px;
+		padding: 0 10px;
+	}
+
+	@include tablets {
+		max-width: 450px;
+	}
+
+	@include phone {
+		max-width: 100%;
+	}
 }
 
 .b-title {
@@ -87,6 +104,14 @@ img {
 
 	span {
 		color: $red;
+	}
+
+	@include tablets {
+		font-size: rem(26px);
+	}
+
+	@include phone {
+		font-size: rem(22px);
 	}
 }
 
@@ -109,5 +134,22 @@ img {
 		position: absolute;
 		top: 0;
 		left: 0;
+	}
+
+	@include tablets {
+		font-size: rem(26px);
+		line-height: 24px;
+		padding-left: 18px;
+		padding-top: 5px;
+
+		&:before {
+			width: 7px;
+			height: 30px;
+		}
+	}
+
+	@include phone {
+		font-size: rem(22px);
+		line-height: 20px;
 	}
 }

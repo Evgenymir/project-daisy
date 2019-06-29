@@ -2,12 +2,35 @@
 	text-align: center;
 	background-color: $bg-grey;
 	padding: 60px 0 90px;
+
+	@include tablets {
+		padding: 50px 0;
+	}
+
+	@include phone {
+		padding: 40px 0;
+	}
+}
+
+.b-whatWeDo__title {
+	@include tablets {
+		margin-bottom: 45px;
+	}
+
+	@include phone {
+		margin-bottom: 30px;
+	}
 }
 
 .b-whatWeDo__block {
 	@include flex();
 	text-align: left;
 	padding-top: 65px;
+
+	@include tablets {
+		display: block;
+		padding-top: 0;
+	}
 }
 
 .b-whatWeDo__left {
@@ -15,6 +38,10 @@
 	margin-right: 3%;
 	padding-top: 30px;
 	order: 1;
+
+	@include tablets {
+		width: 100%;
+	}
 }
 
 .b-whatWeDo__block-text {
@@ -24,6 +51,10 @@
 	line-height: 22px;
 	overflow: hidden;
 	margin-bottom: 40px;
+
+	@include tablets {
+		margin-bottom: 20px;
+	}
 }
 
 .b-whatWeDo__right {
@@ -44,6 +75,15 @@
 			}
 		}
 	}
+
+	@include tablets {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	@include phone {
+		width: 50%;
+	}
 }
 
 .b-whatWeDo__img {
@@ -53,15 +93,37 @@
 
 	&.desctop {
 		position: static;
+
+		@include laptop {
+			width: 85%;
+		}
 	}
 
 	&.laptop {
 		top: 51%;
 		left: -25px;
+
+		@include laptop {
+			width: 57%;
+			top: 48%;
+		}
+
+		@include tablets {
+			top: 55%;
+		}
 	}
 
 	&.tablet {
 		top: 46%;
 		right: 0;
+
+		@include laptop {
+			width: 25%;
+			top: 45%;
+		}
+
+		@include tablets {
+			top: 52%;
+		}
 	}
 }

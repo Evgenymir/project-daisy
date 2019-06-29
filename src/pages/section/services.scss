@@ -2,6 +2,10 @@
 	text-align: center;
 	background-color: $white;
 	padding: 60px 0 90px;
+
+	@include tablets {
+		padding: 40px 0;
+	}
 }
 
 .b-services__text {
@@ -12,6 +16,14 @@
 	line-height: 26px;
 	margin: 0 auto;
 	margin-bottom: 80px;
+
+	@include tablets {
+		margin-bottom: 50px;
+	}
+
+	@include phone {
+		margin-bottom: 30px;
+	}
 }
 
 .b-services__list {
@@ -36,6 +48,19 @@
 			fill: #fc635e;
 		}
 	}
+
+	@include tablets {
+		width: 45%;
+	    margin-left: 5%;
+	    margin-bottom: 30px;
+	}
+
+	@include phone {
+		&:nth-child(3),
+		&:nth-child(4) {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .b-services__item-icon {
@@ -44,21 +69,17 @@
 	path {
 		transition: all ease 0.3s;
 	}
+
+	@include tablets {
+		margin-bottom: 15px;
+	}
+
+	@include phone {
+		width: 70px;
+		height: 85px;
+		margin-bottom: 10px;
+	}
 }
-
-
-
-
-	
-
-
-	
-
-	
-
-	
-
-
 
 .b-services__item-title {
 	position: relative;
@@ -79,6 +100,12 @@
 		bottom: 0;
 		left: 0; right: 0;
 		margin: auto;
+	}
+
+	@include phone {
+		line-height: 16px;
+	    padding-bottom: 5px;
+	    margin-bottom: 10px;
 	}
 }
 

@@ -1,16 +1,33 @@
 .b-marketing {
 	background-color: $bg-grey;
 	padding: 120px 0 80px;
+
+	@include tablets {
+		padding: 50px 0;
+	}
+
+	@include phone {
+		padding: 40px 0;
+	}
 }
 
 .b-marketing__block {
 	@include flex();
+
+	@include tablets {
+		display: block;
+		padding-top: 0;
+	}
 }
 
 .b-marketing__left {
 	width: 44%;
 	margin-right: 2%;
 	order: 1;
+
+	@include tablets {
+		width: 100%;
+	}
 }
 
 .b-marketing__text {
@@ -20,9 +37,22 @@
 	line-height: 22px;
 	overflow: hidden;
 	margin-bottom: 40px;
+
+	@include tablets {
+		margin-bottom: 20px;
+	}
 }
 
 .b-marketing__right {
 	width: 54%;
 	order: 2;
+
+	@include tablets {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	@include phone {
+		width: 50%;
+	}
 }

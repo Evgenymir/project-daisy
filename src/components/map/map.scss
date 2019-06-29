@@ -1,0 +1,13 @@
+.b-map {
+	width: 100%;
+	height: 340px;
+	background-color: $grey;
+
+	@include tablets {
+		height: 240px;
+	}
+
+	@include phone {
+		height: 200px;
+	}
+}

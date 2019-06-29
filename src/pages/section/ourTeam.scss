@@ -2,15 +2,31 @@
 	background-color: $bg-grey;
 	padding: 55px 0 110px;
 	text-align: center;
+
+	@include tablets {
+		padding: 50px 0;
+	}
+
+	@include phone {
+		padding: 40px 0;
+	}
 }
 
 .b-ourTeam__title {
 	margin-bottom: 70px;
+
+	@include tablets {
+		margin-bottom: 40px;
+	}
 }
 
 .b-ourTeam__list {
 	@include flex();
 	padding: 0 2%;
+
+	@include laptop {
+		padding: 0;
+	}
 }
 
 .b-ourTeam__item {
@@ -24,6 +40,14 @@
 
 .b-ourTeam__item-img {
 	margin-bottom: 25px;
+
+	@include tablets {
+		margin-bottom: 10px;
+
+		img {
+			width: 80%;
+		}
+	}
 }
 
 .b-ourTeam__item-name {
@@ -36,6 +60,19 @@
 	span {
 		color: $red;
 	}
+
+	@include tablets {
+		min-height: 42px;
+		font-size: rem(22px);
+		line-height: 20px;
+		margin-bottom: 5px;
+	}
+
+	@include phone {
+		min-height: 37px;
+		font-size: rem(20px);
+		line-height: 18px;
+	}
 }
 
 .b-ourTeam__item-occupation {
@@ -43,4 +80,8 @@
 	font-size: rem(20px);
 	color: $grey;
 	margin-bottom: 14px;
+
+	@include tablets {
+		font-size: rem(18px);
+	}
 }
