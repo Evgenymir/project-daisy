@@ -58,14 +58,14 @@
     }
 }
 
-// Плейсхолдеры
-%clearfix {
-	&:after {
-		content: "";
-		display: block;
-		clear: both;
-	}
+// Добавляем object-fit для img,
+// font-family нужен для работы полифила.
+@mixin object-fit($property: none, $direction: center) {
+    object-fit: $property;
+    object-position: $direction;
+    font-family: "object-fit: #{$property}; object-position: #{$direction};";
 }
+
 @mixin placeholder {
   &::-webkit-input-placeholder { @content; }
   &:-moz-placeholder           { @content; }

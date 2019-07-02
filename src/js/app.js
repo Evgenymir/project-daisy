@@ -1,3 +1,4 @@
+import objectFitImages from 'object-fit-images';
 import Header from '../pages/layout/_layout.js';
 import Burger from '../components/burgerToggle/burgerToggle.js';
 import Anchor from '../components/anchor/anchor.js';
@@ -28,6 +29,13 @@ window.onload = () => {
 	const sliderItem = document.querySelector('.j-slider');
 	if(sliderItem) {
 		Slick();
+	}
+
+	/* Подключаем полифил для свойства object-fill */
+	const imageContainer = document.querySelector('.j-portfolio__content');
+	if(imageContainer) {
+		let images = document.querySelectorAll('.j-image-polyfill');
+		objectFitImages(images);
 	}
 
 	/* Подключегние карты Яндекс */
